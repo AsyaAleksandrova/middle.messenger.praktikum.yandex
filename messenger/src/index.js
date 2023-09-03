@@ -21,9 +21,9 @@ function navigate(page) {
 document.addEventListener('DOMContentLoaded', () => navigate('main'));
 
 document.addEventListener('click', e => {
-   const nav = e.target.getAttribute('link');
+   const nav = e.target.getAttribute('navigate');
    if (nav) {
-      navigate(link);
+      navigate(nav);
       e.preventDefault();
       e.stopImmediatePropagation();
    }

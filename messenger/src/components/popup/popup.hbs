@@ -1,7 +1,7 @@
-<section class="popup popup_open">
+<section class="popup popup_{{type}}">
    <div class="popup__content">
-   <button type="button" class="popup__close">
-      <ion-icon name="add-outline"></ion-icon>
+   <button type="button" class="popup__close" closePopup="{{type}}">
+      <ion-icon name="add-outline" closePopup="{{type}}"></ion-icon>
    </button>
    <h2 class="popup__title">{{ title }}</h2>
       {{> @partial-block }}

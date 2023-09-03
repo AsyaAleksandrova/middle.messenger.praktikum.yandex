@@ -33,11 +33,5 @@
    --colorButtonDisabled: var(--colorDisabled);
    --colorTextInButton: var(--colorBackground);
    --colorInput: var(--colorBackgroundDark);
-
    --colorMenu: var(--colorAccentLight);
-
-
-   background-color: var(--colorBackground);
-   width: 100%;
-   height: 100%;
 }

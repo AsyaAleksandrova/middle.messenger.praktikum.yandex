@@ -1,6 +1,14 @@
 <div class='input__container'>
    <span class='input__placeholder'>{{placeholder}}</span>
-   <input type="{{type}}" name="{{name}}" {{restrictions}} class="input" placeholder="" />
+   <input 
+      type="{{type}}" 
+      name="{{name}}" 
+      autocomplete="{{autocomplete}}"
+      minlength="{{min}}"
+      maxlength="{{max}}"
+      class="input" 
+      placeholder="" 
+   />
    <span class='input__validator input__validator_{{valid}}'></span>
    <div class='input__error'>{{error}}</div>
 </div>
