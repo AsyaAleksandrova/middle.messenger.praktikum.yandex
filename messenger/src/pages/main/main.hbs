@@ -1,0 +1,15 @@
+<section class="main">
+   <section class="container">
+      <h1 class="title">Echo chamber</h1>
+      <p class="intro">Echo chamber - это уютный уголок для общения с единомышленниками, обмена идеями и мыслями с людьми, которые всегда поддержат. <br> 
+         Только не забывайте, что любая социальная сеть - это эхо-камера, которая способна искажать общую картину действительности &#128521; <br>
+         В ваших силах расширять свои интересы и привносить в свой круг общения альтернативные точки зрения.</p>
+      {{> Button label='ВХОД' type='in' }}
+      {{> Button label='РЕГИСТРАЦИЯ' type='reg' }}
+      {{#> Popup title='Регистрация'}}
+         {{#> Form name='register' btnName='Зарегистрироваться'}}
+            {{> Input placeholder='Почта' type='email' name='email' restrictions='autoComplete="username" required' valid='valid' error=''}}
+         {{/Form}}
+      {{/Popup}}
+   </section>   
+</section>

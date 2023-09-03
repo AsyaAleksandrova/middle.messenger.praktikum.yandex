@@ -1,0 +1,43 @@
+@import url(../src/vendor/normalize.css);
+@import url(../src/vendor/font.css);
+
+.root {
+   --vh: 100vh;     /*   добавить расчет высоты для корректного отражения на мобильном  */
+
+   --colorMainSynthesis: #D68E42;
+   --colorMainButtonReg: #8993A6;
+   --colorMainButtonIn: #D68E42;
+
+   --colorBackground: #F3F7F3;
+   --colorText: #2C2936;
+   --colorAccentLight: #8993A6;
+   --colorAccentDark: #C06C4D;
+   --colorBrand: #B0340F;
+
+   --colorShadow: rgb(79, 95, 107, 0.3);
+   --colorBorder: rgb(79, 95, 107, 0.7);
+   --colorDisabled: #c6b5af;
+   --colorBackgroundDark: #ededed;
+
+   --colorLightBox: rgb(246, 246, 246, 0.7);
+   --colorBox: var(--colorBackground);
+   --colorInerBox: #d2dae8;
+   --colorTitle: var(--colorText);
+   --colorSubtitle: var(--colorText);
+   --colorTextInBox: var(--colorText);
+   --colorIcon: var(--colorAccentDark);
+   --colorOutIcon: var(--colorAccentDark);
+   --colorInsideIcon: var(--colorBackground);
+
+   --colorButton: var(--colorAccentDark);
+   --colorButtonDisabled: var(--colorDisabled);
+   --colorTextInButton: var(--colorBackground);
+   --colorInput: var(--colorBackgroundDark);
+
+   --colorMenu: var(--colorAccentLight);
+
+
+   background-color: var(--colorBackground);
+   width: 100%;
+   height: 100%;
+}
