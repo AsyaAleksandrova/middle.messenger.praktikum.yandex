@@ -1,0 +1,66 @@
+.nopage {
+   position: relative;
+   width: 100vw;
+   height: var(--vh);
+   background-color: #39343C;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.nopage__button {
+   width: 200px;
+   height: 36px;
+   margin-top: 30px;
+   border: none;
+   border-radius: 18px;
+   background-color: var(--colorButton);
+   box-shadow: 0px 0px 10px var(--colorButton), 0px 0px 40px var(--colorButton), 0px 0px 80px var(--colorButton);
+   color: var(--colorBox);
+   font-weight: 300;
+   font-size: 15px;
+   font-family: 'Exo 2', Arial, sans-serif;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s ease;
+   cursor: pointer;
+   z-index: 50;
+}
+
+.nopage__button:hover {
+   width: 230px;
+   letter-spacing: 3px;
+}
+
+.nopage__title {
+   margin: 0 0 0px;
+   color: var(--colorBox);
+   font-weight: 100;
+   font-size: 150px;
+   font-family: 'Anton';
+   letter-spacing: 3px;
+}
+
+.nopage__subtitle {
+   margin: 0 0 40px;
+   color: var(--colorBox);
+   font-weight: 100;
+   font-size: 50px;
+   font-family: 'Exo 2', Arial, sans-serif;
+   letter-spacing: 1px;
+   text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+   .nopage__title {
+      font-size: 100px;
+   }
+
+   .nopage__subtitle {
+      font-size: 30px;
+   }
+}

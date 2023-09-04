@@ -1,0 +1,18 @@
+.dialogue{
+   min-height: var(--vh);
+   width: 100%;
+   background: rgb(137, 147, 166);
+   background: radial-gradient(circle, rgba(137, 147, 166, 0.2) 0%, rgba(243, 247, 243, 0.5) 30%, rgba(137, 147, 166, 0.5) 100%);
+   position: relative;
+}
+
+.dialogue__placeholder{
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+   color: var(--colorTextInBox);
+   width: 100%;
+   text-align: center;
+   position: absolute;
+   top: 30%;
+}

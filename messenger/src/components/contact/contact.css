@@ -1,0 +1,111 @@
+.contact{
+   padding: 10px;
+   display: grid;
+   gap: 5px;
+   grid-template-columns: 50px auto 30px;
+   grid-template-rows: 16px 30px;
+   grid-template-areas:
+         "photo login date"
+         "photo message unread";
+   position: relative;
+   cursor: pointer;
+}
+
+.contact::before, .contact::after {
+   content: '';
+   position: absolute;
+   left: 10px;
+   height: 0.5px;
+   width: calc(100% - 20px);
+   background-color: var(--colorShadow);
+}
+
+.contact::before{
+   top: 0;
+}
+
+.contact::after{
+   bottom: 0;
+}
+
+.contact_active{
+   background-color: var(--colorBackgroundDark);
+}
+
+.contact__photo{
+   grid-area: photo;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   object-fit: cover;
+   background-color: var(--colorBackgroundDark);
+   border: 0.5px solid var(--colorShadow);
+}
+
+.contact__login {
+   grid-area: login;
+   margin: 0;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   color: var(--colorTextInBox);
+   width: 100%;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.contact__text {
+   grid-area: message;
+   margin: 0;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 13px;
+   font-weight: 200;
+   color: var(--colorTextInBox);
+   width: 100%;
+   height: 100%;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;  
+   overflow: hidden;
+}
+
+.contact__date {
+   grid-area: date;
+   margin: 0;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 12px;
+   font-weight: 200;
+   color: var(--colorTextInBox);
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.contact__unread {
+   grid-area: unread;
+   margin: 0;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 12px;
+   font-weight: 400;
+   color: var(--colorBackground);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   min-width: 20px;
+   height: 20px;
+   border-radius: 10px;
+   padding: 0 1px;
+   background-color: var(--colorBrand);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.chats-list_hidden .chats-list__items .contact .contact__unread{
+   left: 4px;
+   bottom: 4px;
+   right: auto;
+   grid-area: unset;
+}

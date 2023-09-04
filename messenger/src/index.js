@@ -11,6 +11,7 @@ const pages = {
    'main': [Pages.Main],
    'chats': [Pages.Chats],
    'settings': [Pages.Settings],
+   'error': [Pages.Error, { errorMessage: 'Страница не найдена', errorCode: '404' }],
 }
 
 function navigate(page) {
@@ -23,7 +24,17 @@ document.addEventListener('DOMContentLoaded', () => navigate('main'));
 document.addEventListener('click', e => {
    const nav = e.target.getAttribute('navigate');
    if (nav) {
-      navigate(nav);
+      if (nav === 'error__404') {
+         pages.error[1].errorMessage = 'Страница не найдена';
+         pages.error[1].errorCode = '404';
+         navigate('error');
+      } else if (nav === 'error__500') {
+         pages.error[1].errorMessage = 'Что-то пошло не так...';
+         pages.error[1].errorCode = '500';
+         navigate('error');
+      } else {
+         navigate(nav);
+      }
       e.preventDefault();
       e.stopImmediatePropagation();
    }
