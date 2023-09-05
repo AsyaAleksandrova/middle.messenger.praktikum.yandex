@@ -8,11 +8,12 @@
   },
   "scripts": {
     "dev": "vite --port 3000",
-    "start": "vite build",
+    "start": "vite build && http-server dist -p 3000",
     "preview": "vite preview"
   },
   "devDependencies": {
     "handlebars": "^4.7.8",
+    "http-server": "^14.1.1",
     "postcss": "^8.4.29",
     "vite": "^4.4.5"
   },
