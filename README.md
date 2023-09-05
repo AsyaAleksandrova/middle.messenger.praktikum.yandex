@@ -21,7 +21,7 @@ https://drive.google.com/drive/folders/1cz2I5qtNt5FHwVNRZArx29tz3RUkRPIG?usp=sha
 
 ##
 
-![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) 
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 #### [VISIT HERE](https://jocular-gingersnap-8267e4.netlify.app/)
 
