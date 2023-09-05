@@ -17,7 +17,7 @@
 ##
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)  
-https://drive.google.com/drive/folders/1cz2I5qtNt5FHwVNRZArx29tz3RUkRPIG?usp=sharing
+[OPEN](https://www.figma.com/file/3tXMKOt3rHdBax4YhYblqJ/Praktikum_messenger?type=design&node-id=0%3A1&mode=design&t=y6GQgMd8neTEvL1y-1)
 
 ##
 
