@@ -16,3 +16,30 @@
    position: absolute;
    top: 30%;
 }
+
+.dialogue__message{
+   width: 100%;
+   padding: 5px 80px 5px 40px;
+   box-sizing: border-box;
+   position: absolute;
+   bottom: 50px;
+   left: 0px;
+   min-height: 30px;
+   max-height: 40%;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 14px;
+   color: var(--colorTextInBox);
+   background-color: transparent;
+   border: none;
+   border-top: 0.5px solid var(--colorShadow);
+   border-bottom: 0.5px solid var(--colorShadow);
+   resize: vertical;
+}
+
+.dialogue__message:focus{
+   outline: none;
+}
+
+.dialogue__message:disabled{
+   display: none;
+}

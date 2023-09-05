@@ -1,4 +1,4 @@
-<section class="chats">
+<maim class="chats">
    <section class="chats__container">
       {{#> ChatsList}}
          {{> Contact 
@@ -19,13 +19,13 @@
       
       {{/Dialogue}}
    </section>
+</maim>
 
-   {{#> Footer }}
-      {{> Expander icon='chatbubble-ellipses' chapter='Чаты' navigate='chats'}}
-      {{> Expander icon='cog' chapter='Настройки' navigate='settings'}}
-      {{> Expander icon='exit' chapter='Выйти' navigate='main'}}
-      {{> Expander icon='bug' chapter='Страница 404' navigate='error__404'}}
-      {{> Expander icon='bug' chapter='Страница 500' navigate='error__500'}}
-   {{/Footer}}
+{{#> Footer }}
+   {{> Expander icon='chatbubble-ellipses' chapter='Чаты' navigate='chats'}}
+   {{> Expander icon='cog' chapter='Настройки' navigate='settings'}}
+   {{> Expander icon='exit' chapter='Выйти' navigate='main'}}
+   {{> Expander icon='bug' chapter='Страница 404' navigate='error__404'}}
+   {{> Expander icon='bug' chapter='Страница 500' navigate='error__500'}}
+{{/Footer}}
 
-</section>

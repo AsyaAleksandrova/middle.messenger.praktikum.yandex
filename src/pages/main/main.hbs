@@ -1,4 +1,4 @@
-<section class="main">
+<main class="main">
    <section class="container">
       <h1 class="title">Echo chamber</h1>
       <p class="intro">Echo chamber - это уютный уголок для общения с единомышленниками, обмена идеями и мыслями с людьми, которые всегда поддержат. <br> 
@@ -6,99 +6,99 @@
          В ваших силах расширять свои интересы и привносить в свой круг общения альтернативные точки зрения.</p>
       {{> Button label='ВХОД' type='in' }}
       {{> Button label='РЕГИСТРАЦИЯ' type='reg' }}
-      {{#> Popup title='Регистрация' type='reg'}}
-         {{#> Form name='register' btnName='Зарегистрироваться' navigate='chats'}}
-            {{> Input 
-                  placeholder='Логин' 
-                  type='text' 
-                  name='login' 
-                  autocomplete='username' 
-                  min='2' 
-                  max='30' 
-                  valid='valid' 
-                  error=''}}
-            {{> Input 
-                  placeholder='Имя' 
-                  type='text' 
-                  name='first_name' 
-                  autocomplete='off'
-                  min='2'
-                  max='256'
-                  valid='valid' 
-                  error=''}}
-            {{> Input 
-                  placeholder='Фамилия' 
-                  type='text' 
-                  name='second_name'
-                  autocomplete='off'
-                  min='2'
-                  max='256'
-                  valid='valid' 
-                  error=''}}
-            {{> Input 
-                  placeholder='Почта' 
-                  type='email' 
-                  name='email'
-                  autocomplete='off'
-                  valid='invalid' 
-                  error='Не корректно'}}
-            {{> Input 
-                  placeholder='Телефон' 
-                  type='tel'
-                  name='phone' 
-                  autocomplete='off'
-                  valid='invalid' 
-                  error='Не корректно'}}
-            {{> Input 
-                  placeholder='Пароль' 
-                  type='password' 
-                  name='password' 
-                  autocomplete='new-password'
-                  min='8' 
-                  max='30' 
-                  valid='valid' 
-                  error=''}}
-         {{/Form}}
-         {{> Redirect question='Уже зарегистрированы?' direction='ВХОД' openLink='in' closePopup='reg'}}
-      {{/Popup}}
+   </section>
+</main>
+{{#> Popup title='Регистрация' type='reg'}}
+   {{#> Form name='register' btnName='Зарегистрироваться' navigate='chats'}}
+      {{> Input 
+            placeholder='Логин' 
+            type='text' 
+            name='login' 
+            autocomplete='username' 
+            min='2' 
+            max='30' 
+            valid='valid' 
+            error=''}}
+      {{> Input 
+            placeholder='Имя' 
+            type='text' 
+            name='first_name' 
+            autocomplete='off'
+            min='2'
+            max='256'
+            valid='valid' 
+            error=''}}
+      {{> Input 
+            placeholder='Фамилия' 
+            type='text' 
+            name='second_name'
+            autocomplete='off'
+            min='2'
+            max='256'
+            valid='valid' 
+            error=''}}
+      {{> Input 
+            placeholder='Почта' 
+            type='email' 
+            name='email'
+            autocomplete='off'
+            valid='invalid' 
+            error='Не корректно'}}
+      {{> Input 
+            placeholder='Телефон' 
+            type='tel'
+            name='phone' 
+            autocomplete='off'
+            valid='invalid' 
+            error='Не корректно'}}
+      {{> Input 
+            placeholder='Пароль' 
+            type='password' 
+            name='password' 
+            autocomplete='new-password'
+            min='8' 
+            max='30' 
+            valid='valid' 
+            error=''}}
+   {{/Form}}
+   {{> Redirect question='Уже зарегистрированы?' direction='ВХОД' openLink='in' closePopup='reg'}}
+{{/Popup}}
 
-      {{#> Popup title='Вход' type='in'}}
-         {{#> Form name='login' btnName='Войти' navigate='chats'}}
-            {{> Input
-                  placeholder='Логин'
-                  type='text'
-                  name='login'
-                  autocomplete='username'
-                  min='2'
-                  max='30'
-                  valid='valid'
-                  error=''}}
-            {{> Input
-                  placeholder='Пароль'
-                  type='password'
-                  name='password'
-                  autocomplete='current-password'
-                  min='8'
-                  max='30'
-                  valid='valid'
-                  error=''}}
-         {{/Form}}
-         {{> Redirect question='Забыли пароль?' direction='СБРОСИТЬ ПАРОЛЬ' openLink='refresh' closePopup='in'}}
-      {{/Popup}}
+{{#> Popup title='Вход' type='in'}}
+   {{#> Form name='login' btnName='Войти' navigate='chats'}}
+      {{> Input
+            placeholder='Логин'
+            type='text'
+            name='login'
+            autocomplete='username'
+            min='2'
+            max='30'
+            valid='valid'
+            error=''}}
+      {{> Input
+            placeholder='Пароль'
+            type='password'
+            name='password'
+            autocomplete='current-password'
+            min='8'
+            max='30'
+            valid='valid'
+            error=''}}
+   {{/Form}}
+   {{> Redirect question='Забыли пароль?' direction='СБРОСИТЬ ПАРОЛЬ' openLink='refresh' closePopup='in'}}
+{{/Popup}}
 
-      {{#> Popup title='Сброс пароля' type='refresh'}}
-         {{#> Form name='refresh' btnName='СБРОСИТЬ' navigate='main'}}
-            {{> Input
-                  placeholder='Логин'
-                  type='text'
-                  name='login'
-                  autocomplete='username'
-                  min='2'
-                  max='30'
-                  valid='valid'
-                  error=''}}
-         {{/Form}}
-      {{> Redirect question='Вспомнили пароль?' direction='ВХОД' openLink='in' closePopup='refresh'}}
-      {{/Popup}}
-   </section>   
-</section>
+{{#> Popup title='Сброс пароля' type='refresh'}}
+   {{#> Form name='refresh' btnName='СБРОСИТЬ' navigate='main'}}
+      {{> Input
+            placeholder='Логин'
+            type='text'
+            name='login'
+            autocomplete='username'
+            min='2'
+            max='30'
+            valid='valid'
+            error=''}}
+   {{/Form}}
+   {{> Redirect question='Вспомнили пароль?' direction='ВХОД' openLink='in' closePopup='refresh'}}
+{{/Popup}}
