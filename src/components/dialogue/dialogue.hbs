@@ -1,4 +1,12 @@
 <section class="dialogue">
    <p class="dialogue__placeholder">Выберите чат чтобы начать общение</p>
    {{> @partial-block }}
+   <textarea
+         name="message" 
+         minlength="1"
+         maxlength="1500"
+         class="dialogue__message" 
+         placeholder="Сообщение..."
+         disabled="true">
+   </textarea>
 </section>
