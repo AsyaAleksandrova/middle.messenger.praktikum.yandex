@@ -1,0 +1,96 @@
+<main class="settings">
+   <section class='settings__box'>
+      <h3 class='settings__subtitle'><span class="settings__icon"><ion-icon name="camera"></ion-icon></span>  Аватар</h3>
+      <div class='settings__avatar'>
+         <input type='file' accept=".png, .jpg, .jpeg" name='avatar' id='avatar' class="settings__photo_input" />
+         <button type='button' class='settings__avatar-button settings__avatar-button_left'>
+            <span class='settings__icon'><ion-icon name="close-outline"></ion-icon></span>
+         </button>
+         <label for='avatar'>
+            <img src='https://shapka-youtube.ru/wp-content/uploads/2020/12/girls-ava1.jpg' alt='Ваше фото' class='settings__photo' />
+            <div class='settings__avatar-button'>
+               <span class='settings__icon'><ion-icon name="download-outline"></ion-icon></span>
+            </div>
+         </label>
+         <div class='settings__avatar-button settings__avatar-button_left'>
+            <span class='settings__icon'><ion-icon name="glasses"></ion-icon></span>
+         </div>                         
+      </div>
+   </section>
+   <section class='settings__box'>
+      <h3 class='settings__subtitle'><span class="settings__icon"><ion-icon name="person-outline"></ion-icon></span> О себе</h3>
+      {{#> Form name='personal-info' btnName='Сохранить'}}
+         {{> Input 
+               placeholder='Имя' 
+               type='text' 
+               name='first_name' 
+               autocomplete='off'
+               min='2'
+               max='256'
+               valid='valid' 
+               error=''}}
+         {{> Input 
+               placeholder='Фамилия' 
+               type='text' 
+               name='second_name'
+               autocomplete='off'
+               min='2'
+               max='256'
+               valid='valid' 
+               error=''}}
+         {{> Input 
+               placeholder='Никнейм' 
+               type='text' 
+               name='display_name'
+               autocomplete='off'
+               min='2'
+               max='256'
+               valid='valid' 
+               error=''}}
+         {{> Input 
+               placeholder='Почта' 
+               type='email' 
+               name='email'
+               autocomplete='off'
+               valid='valid' 
+               error=''}}
+         {{> Input 
+               placeholder='Телефон' 
+               type='tel'
+               name='phone' 
+               autocomplete='off'
+               valid='valid' 
+               error=''}}
+      {{/Form}}
+   </section>
+   <section class='settings__box'>
+      <h3 class='settings__subtitle'><span class="settings__icon"><ion-icon name="key-outline"></ion-icon></span> Безопасность</h3>
+      {{#> Form name='password' btnName='Сохранить'}}
+         {{> Input 
+               placeholder='Старый пароль' 
+               type='password' 
+               name='old_password' 
+               autocomplete='off'
+               min='8' 
+               max='30' 
+               valid='valid' 
+               error=''}}
+         {{> Input 
+               placeholder='Новый пароль' 
+               type='new_password' 
+               name='password' 
+               autocomplete='new-password'
+               min='8' 
+               max='30' 
+               valid='valid' 
+               error=''}}
+      {{/Form}}
+   </section>
+</main>   
+{{#> Footer }}
+   {{> Expander icon='chatbubble-ellipses' chapter='Чаты' navigate='chats'}}
+   {{> Expander icon='cog' chapter='Настройки' navigate='settings'}}
+   {{> Expander icon='exit' chapter='Выйти' navigate='main'}}
+   {{> Expander icon='bug' chapter='Страница 404' navigate='error__404'}}
+   {{> Expander icon='bug' chapter='Страница 500' navigate='error__500'}}
+{{/Footer}}

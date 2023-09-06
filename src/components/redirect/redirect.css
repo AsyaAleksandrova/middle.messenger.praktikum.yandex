@@ -1,0 +1,24 @@
+.question {
+   color: var(--colorAccentLight);
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 200;
+   user-select: none;
+   margin: 20px 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+   .question {
+      font-size: 12px;
+   }
+}
+
+.link {
+   border: none;
+   background-color: transparent;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--colorAccentDark);
+   cursor: pointer;
+}

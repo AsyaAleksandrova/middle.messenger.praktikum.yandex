@@ -1,0 +1,10 @@
+<section class="chats-list">
+   <button type='button' class='chats-list__hide' toggle="menu"></button>
+   <div class="chats-list__search">
+      <input type="search" name="message-filter" id="message-filter" class="chats-list__filter" placeholder="Поиск" />
+      <label for="message-filter" class="chats-list__search-label"><ion-icon name="search-outline"></ion-icon></label>
+   </div>
+   <ul class="chats-list__items">
+      {{> @partial-block }}
+   </ul>
+</section>

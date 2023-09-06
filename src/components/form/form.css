@@ -1,0 +1,34 @@
+.submit {
+   width: 100%;
+   height: 35px;
+   border: none;
+   border-radius: 7px;
+   color: var(--colorTextInButton);
+   cursor: pointer;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   background-color: var(--colorButton);
+   text-transform: uppercase;
+   transition: all ease 0.5s;
+}
+
+.submit:hover {
+   transform: scale(1.02);
+   box-shadow: 2px 2px 5px var(--colorShadow);
+}
+
+.submit:active {
+   transform: scale(1);
+   box-shadow: 2px 2px 5px var(--colorShadow);
+}
+
+.submit:disabled {
+   background-color: var(--colorButtonDisabled);
+   cursor: unset;
+}
+
+.submit:disabled:hover {
+   transform: none;
+   box-shadow: none;
+}

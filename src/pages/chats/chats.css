@@ -1,0 +1,14 @@
+.chats{
+   height: var(--vh);
+   width: 100%;
+   margin: 0;
+}
+
+.chats__container{
+   display: grid;
+   grid-template-columns: minmax(70px, min-content) auto;
+}
+
+.chats ::-webkit-scrollbar {
+   display: none;
+}

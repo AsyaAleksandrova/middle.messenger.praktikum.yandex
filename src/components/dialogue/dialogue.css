@@ -1,0 +1,45 @@
+.dialogue{
+   min-height: var(--vh);
+   width: 100%;
+   background: rgb(137, 147, 166);
+   background: radial-gradient(circle, rgba(137, 147, 166, 0.2) 0%, rgba(243, 247, 243, 0.5) 30%, rgba(137, 147, 166, 0.5) 100%);
+   position: relative;
+}
+
+.dialogue__placeholder{
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+   color: var(--colorTextInBox);
+   width: 100%;
+   text-align: center;
+   position: absolute;
+   top: 30%;
+}
+
+.dialogue__message{
+   width: 100%;
+   padding: 5px 80px 5px 40px;
+   box-sizing: border-box;
+   position: absolute;
+   bottom: 50px;
+   left: 0px;
+   min-height: 30px;
+   max-height: 40%;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 14px;
+   color: var(--colorTextInBox);
+   background-color: transparent;
+   border: none;
+   border-top: 0.5px solid var(--colorShadow);
+   border-bottom: 0.5px solid var(--colorShadow);
+   resize: vertical;
+}
+
+.dialogue__message:focus{
+   outline: none;
+}
+
+.dialogue__message:disabled{
+   display: none;
+}

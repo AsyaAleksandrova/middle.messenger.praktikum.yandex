@@ -1,0 +1,31 @@
+<maim class="chats">
+   <section class="chats__container">
+      {{#> ChatsList}}
+         {{> Contact 
+               photo="https://telega.in/system/channels/avatars/000/089/430/original/NMR-channels_and_covers_fin-20.png" 
+               login='Редакция Наука' 
+               message='Длинноперые губаны умеют видеть кожей и не теряют эту способность даже после смерти.' 
+               date='17:31' 
+               unread='15'}}
+         {{> Contact 
+               photo="https://cdn-icons-png.flaticon.com/512/149/149071.png" 
+               login='Федька' 
+               message='Посмотри в конфе. Вроде там находил ссылку' 
+               date='17:10' 
+               unread='1'}}
+      {{/ChatsList }}
+
+      {{#> Dialogue }}
+      
+      {{/Dialogue}}
+   </section>
+</maim>
+
+{{#> Footer }}
+   {{> Expander icon='chatbubble-ellipses' chapter='Чаты' navigate='chats'}}
+   {{> Expander icon='cog' chapter='Настройки' navigate='settings'}}
+   {{> Expander icon='exit' chapter='Выйти' navigate='main'}}
+   {{> Expander icon='bug' chapter='Страница 404' navigate='error__404'}}
+   {{> Expander icon='bug' chapter='Страница 500' navigate='error__500'}}
+{{/Footer}}
+

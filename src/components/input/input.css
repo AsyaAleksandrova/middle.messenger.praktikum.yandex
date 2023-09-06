@@ -1,0 +1,117 @@
+.input {
+   width: 85%;
+   max-width: 320px;
+   height: 35px;
+   margin: 2px 0 0 2px;
+   border: none;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 16px;
+   color: var(--colorTextInBox);
+   padding-left: 5px;
+   background: transparent;
+}
+
+.input:focus {
+   outline: 0;
+   outline-offset: 0;
+}
+
+
+.input__container {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   min-height: 40px;
+   column-gap: 5px;
+   margin: 30px 0;
+}
+
+.input__container:last-of-type {
+   margin-bottom: 50px;
+}
+
+.input__placeholder {
+   z-index: -1;
+   position: absolute;
+   top: 14px;
+   left: 0px;
+   padding-left: 8px;
+   width: 100%;
+   box-sizing: border-box;
+   color: #909296;
+   font-family: 'Exo 2', Arial, sans-serif;
+   font-size: 16px;
+}
+
+.input__placeholder_active {
+   font-size: 12px;
+   top: 2px;
+}
+
+.input__validator {
+   position: absolute;
+   top: 0px;
+   left: 0;
+   width: calc(100%);
+   height: 42px;
+   color: var(--colorTextInBox);
+   background-color: var(--colorInput);
+   display: flex;
+   align-items: center;
+   z-index: -2;
+}
+
+.input__validator_valid {
+   background-image: url(../../static/images/free-icon-font-check.png);
+   background-size: 20px;
+   background-repeat: no-repeat;
+   background-position: 95% 50%;
+}
+
+.input__validator::before {
+   content: '';
+   position: absolute;
+   z-index: 5;
+   top: 0px;
+   left: 0px;
+   width: 50px;
+   height: 10px;
+   border-top: 1.5px solid #925F61;
+   border-left: 1.5px solid #925F61;
+   transition: 0.5s ease;
+}
+
+.input__validator::after {
+   content: '';
+   position: absolute;
+   z-index: 5;
+   bottom: 0px;
+   right: 0px;
+   width: 50px;
+   height: 10px;
+   border-bottom: 1.5px solid #925F61;
+   border-right: 1.5px solid #925F61;
+   transition: 0.5s ease;
+}
+
+.input:focus+.input__validator::before,
+.input:focus+.input__validator::after {
+   width: calc(100% - 2px);
+   height: calc(100% - 2px);
+}
+
+.input__validator_valid::after,
+.input__validator_valid::before {
+   border-color: #3d5731;
+}
+
+.input__error {
+   font-family: 'Exo 2', Arial, sans-serif;
+   color: #925F61;
+   position: absolute;
+   top: 45px;
+   margin: 0;
+   left: 0;
+   font-size: 11px;
+   width: 100%;
+}
